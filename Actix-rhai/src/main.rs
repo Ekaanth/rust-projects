@@ -19,7 +19,7 @@ async fn multiply(path: Path<(i64, i64)>) -> impl Responder {
     format!("{result}")
 }
 
-#[get("/add/{num1}/{num2}}")]
+#[get("/add/{num1}/{num2}")]
 async fn add(path: Path<(i64,i64)>) -> impl Responder{
     let (num1, num2) = path.into_inner();
 
