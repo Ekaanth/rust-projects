@@ -19,3 +19,5 @@ const runMain = async () => {
     process.exit(0);
   }
 };
+
+runMain();
