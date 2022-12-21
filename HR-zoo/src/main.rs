@@ -14,10 +14,6 @@ fn main() {
         }else if *element == 'o'{
             y += 1;
         }
-
-
-
-        
     }
     if x*2 == y {
         println!("Yes");
