@@ -1,0 +1,26 @@
+[package]
+name = "rust-eth"
+version = "0.1.0"
+edition = "2021"
+author= "Abhishek"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "4.1.1"
+ethers = "1.0.2"
+ethers-providers = "1.0.2"
+ethers-solc = "1.0.2"
+eyre = "0.6.8"
+hex = "0.4.3"
+tokio = "1.24.1"
+tracing = "0.1.37"
+tracing-subscriber = "0.3.16"
+
+[[bin]]
+name = "transact"
+path = "src/simple_transactions.rs"
+
+[[bin]]
+name = "deploy"
+path="src/contract_deploy.rs"
